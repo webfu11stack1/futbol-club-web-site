@@ -1,0 +1,517 @@
+ /* Styling for header navigation and layout */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+  .logo img {
+    height: 50px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #f0a500;
+  }
+
+  .join-button {
+    background-color: #f0a500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .join-button:hover {
+    background-color: #d18b00;
+  }
+
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .get-started {
+    background-color: #f0a500;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .get-started:hover {
+    background-color: #d18b00;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+
+ /* General Styles */
+
+
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #2c3e50;
+}
+
+.players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.player-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.player-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.player-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.player-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.player-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-content img {
+  max-width: 60%;
+  max-height: 380px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.modal-content.open {
+  transform: scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #e74c3c;
+}
+
+.modal-header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3498db;
+  margin-bottom: 15px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #34495e;
+}
+
+.modal-header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.modal-body strong {
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .players-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .player-card {
+      width: 90%;
+  }
+}
+
+/* Slick Slider Customization */
+.player-slider {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.player-slider::-webkit-scrollbar {
+  height: 10px;
+}
+
+.player-slider::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 5px;
+}
+
+.player-slider::-webkit-scrollbar-track {
+  background: #ecf0f1;
+}
+
+  
+  /* Club News Section */
+.news {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+ /* News Section */
+.news-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .news-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .news-card h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .news-card p {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .news-card button {
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .news-card button:hover {
+    background-color: #21867a;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .close-btn {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .news-cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+.contact-section {
+    padding: 50px;
+    background: #08163b;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    color: #f8f9fa;
+}
+.contact-header p {
+  
+  color: #f8f9fa;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-info, .contact-map {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.contact-info h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2980b9;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

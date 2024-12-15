@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Club</title>
+  <!-- Slick Slider CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <link rel="stylesheet" href="static/styles.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="logo"> Real Madrid
+      <img src="logo/image/image.png" alt="Football Club Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Bosh sahifa</a></li>
+        <li><a href="#players">O'yinchilar</a></li>
+        <li><a href="#yutuq">Yutuqlar</a></li>
+        <li><a href="#news">Klub Yangiliklari</a></li>
+        <li><a href="match.html">O'yin Ma'lumotlari</a></li>
+      </ul>
+    </nav>
+    <button class="join-button">Bizga Qo'shiling</button>
+  </header>
+
+  <section class="hero">
+    <img src="image.png" alt="Stadium Image" class="hero-image">
+    <div class="hero-text">
+      <h1>O'yin Boshlanadi!</h1>
+      <p>Futbolga bo'lgan ehtirosingizni hech qachon ko'rmagan tarzda kashf eting!</p>
+      <button class="get-started">Boshlash</button>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <h2 class="section-title">Klub Yangiliklari</h2>
+    
+    <!-- News Cards Section -->
+    <div class="news-cards-container">
+      <!-- News Card 1: Transfer News -->
+      <div class="news-card">
+        <img src="news/image/image copy.png" alt="Transfer News">
+        <h3>Yangi Transferlar</h3>
+        <p>Jamoamizga yangi o'yinchi qo'shildi. Barcha yangiliklar uchun bizni kuzatib boring!</p>
+        <button class="read-more" data-modal="modal-1">Batafsil</button>
+      </div>
+  
+      <!-- News Card 2: Match Win -->
+      <div class="news-card">
+        <img src="news/image/image.png" alt="Match Win">
+        <h3>Jamoamiz G'alaba Qozondi!</h3>
+        <p>Shanba kuni bo'lib o'tgan o'yinda jamoamiz yirik hisobda g'alaba qozondi.</p>
+        <button class="read-more" data-modal="modal-2">Batafsil</button>
+      </div>
+  
+      <!-- News Card 3: New Stadium Project -->
+      <div class="news-card">
+        <img src="news/image/image copy 2.png" alt="New Stadium">
+        <h3>Yangi Stadion Loyihasi</h3>
+        <p>Klubimiz yangi stadion qurilishi uchun rasmiy ravishda ishga tushdi. Yangilanishlarni kuzatib boring.</p>
+        <button class="read-more" data-modal="modal-3">Batafsil</button>
+      </div>
+  
+      <!-- News Card 4: Injury Updates -->
+      <div class="news-card">
+        <img src="news/image/image copy 3.png" alt="Injury Updates">
+        <h3>Jarohatlar Yangilanishi</h3>
+        <p>Bir nechta o'yinchilar jarohat olib, davolanish uchun tanaffus qilishga majbur bo'lishdi.</p>
+        <button class="read-more" data-modal="modal-4">Batafsil</button>
+      </div>
+  
+      <!-- News Card 5: Coach's New Strategy -->
+      <div class="news-card">
+        <img src="news/image/image copy 4.png" alt="Coach's Strategy">
+        <h3>Murabbiyning Yangi Strategiyasi</h3>
+        <p>Murabbiyning yangi taktikasi va jamoaning o'yin uslubi haqida batafsil.</p>
+        <button class="read-more" data-modal="modal-5">Batafsil</button>
+      </div>
+  
+      <!-- News Card 6: Club's Financial Update -->
+      <div class="news-card">
+        <img src="news/image/image copy 5.png" alt="Financial Update">
+        <h3>Moliyaviy Yangiliklar</h3>
+        <p>Klubimizning moliyaviy holati va yangi sarmoyalar haqida yangiliklar.</p>
+        <button class="read-more" data-modal="modal-6">Batafsil</button>
+      </div>
+    </div>
+  
+    <!-- Modal 1: Yangi Transferlar -->
+    <div class="modal" id="modal-1">
+      <div class="modal-content">
+        <span class="close-btn" data-modal="modal-1">&times;</span>
+        <h3>Yangi Transferlar</h3>
+        <img src="news/image/image copy.png" alt="Transfer News">
+        <p>Jamoamiz yangi o'yinchi bilan shartnoma imzoladi. Bu o'yinchi jamoamizga katta qo'shimcha bo'ladi, ayniqsa hujumchi pozitsiyasida.</p>
+        <p><strong>Qisqacha tarix:</strong> O'yinchi ilgari Frantsiya chempionatida o'ynagan va ko'plab yirik turnirlarda muvaffaqiyatga erishgan.</p>
+      </div>
+    </div>
+  
+    <!-- Modal 2: G'alaba Yangiliklari -->
+    <div class="modal" id="modal-2">
+      <div class="modal-content">
+        <span class="close-btn" data-modal="modal-2">&times;</span>
+        <h3>Jamoamiz G'alaba Qozondi!</h3>
+        <img src="news/image/image.png" alt="Match Win">
+        <p>Shanba kuni bo'lib o'tgan o'yinda jamoamiz 4-0 hisobida g'alaba qozondi. Bu g'alaba bizning yangi o'yinchimiz uchun alohida muhim edi.</p>
+        <p><strong>G'alaba Tafsilotlari:</strong> 2 ta golni yangi hujumchimiz, 1 ta golni esa o'zining mukammal o'yini bilan taniqli yarim himoyachimiz urdi.</p>
+      </div>
+    </div>
+  
+    <!-- Modal 3: Yangi Stadion Loyihasi -->
+    <div class="modal" id="modal-3">
+      <div class="modal-content">
+        <span class="close-btn" data-modal="modal-3">&times;</span>
+        <h3>Yangi Stadion Loyihasi</h3>
+        <img src="news/image/image copy 2.png" alt="New Stadium">
+        <p>Klubimiz yangi stadion qurilishi haqida rasmiy e'lon berdi. Stadionni 2025-yil oxiriga qadar tamomlash rejalashtirilgan.</p>
+        <p><strong>Loyihaning Ahmiyati:</strong> Yangi stadion yanada ko'proq muxlislarni jalb qilish imkonini beradi va jamoamiz uchun katta iqtisodiy foyda keltiradi.</p>
+      </div>
+    </div>
+  
+    <!-- Modal 4: Jarohatlar Yangilanishi -->
+    <div class="modal" id="modal-4">
+      <div class="modal-content">
+        <span class="close-btn" data-modal="modal-4">&times;</span>
+        <h3>Jarohatlar Yangilanishi</h3>
+        <img src="news/image/image copy 3.png" alt="Injury Update">
+        <p>Bir nechta o'yinchilar jarohat olishdi va bir necha haftadan so'ng qaytishlari kutilmoqda. O'yinchi xususiyati va jarohatlari haqida batafsil ma'lumotlar.</p>
+        <p><strong>Jarohatli O'yinchilar:</strong> Yangi hujumchi va himoyachimiz hozirda davolanmoqda, ularning tez orada qaytishi kutilyapti.</p>
+      </div>
+    </div>
+  
+    <!-- Modal 5: Murabbiyning Yangi Strategiyasi -->
+    <div class="modal" id="modal-5">
+      <div class="modal-content">
+        <span class="close-btn" data-modal="modal-5">&times;</span>
+        <h3>Murabbiyning Yangi Strategiyasi</h3>
+        <img src="news/image/image copy 4.png" alt="Coach Strategy">
+        <p>Murabbiyning yangi taktikasiga ko'ra, biz ko'proq pressingni qo'llab-quvvatlaymiz. Bu usulni yangi o'yinchilar jamoaga qo'shilgach, amalga oshiramiz.</p>
+        <p><strong>Yangi Taktiqa:</strong> Jamoa hujum va himoya o'rtasidagi balansni saqlashga qaratilgan yangi metodlarni sinab ko'rmoqda.</p>
+      </div>
+    </div>
+  
+    <!-- Modal 6: Moliyaviy Yangiliklar -->
+    <div class="modal" id="modal-6">
+      <div class="modal-content">
+        <span class="close-btn" data-modal="modal-6">&times;</span>
+        <h3>Moliyaviy Yangiliklar</h3>
+        <img src="news/image/image copy 5.png" alt="Financial Update">
+        <p>Klubimizning moliyaviy holati yaxshi. Yangi sarmoyalar va kelgusidagi yirik sponso'rlik bitimlari haqida batafsil.</p>
+        <p><strong>Moliyaviy o'sish:</strong> Klubimizning daromadlari o'sib bormoqda, yangi sponso'rlar va o'yinchilar bilan hamkorlikni kengaytirish rejalashtirilgan.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="players" id="players">
+    <h2 class="section-title">O'yinchilar</h2>
+    <div class="players-container">
+      <!-- Player Card 1 -->
+      <div class="player-card" data-player="1">
+        <img src="pic/mbappe.png" alt="Player 1">
+        <h3>Mbappe</h3>
+        <p>Hujumchi</p>
+      </div>
+      <!-- Player Card 2 -->
+      <div class="player-card" data-player="2">
+        <img src="pic/vini.png" alt="Player 2">
+        <h3>Vini Jr</h3>
+        <p>Hujumchi</p>
+      </div>
+      <!-- Player Card 3 -->
+      <div class="player-card" data-player="3">
+        <img src="pic/couttois.png" alt="Player 3">
+        <h3>Courtois</h3>
+        <p>Darvozabon</p>
+      </div>
+      <!-- Player Card 4 -->
+      <div class="player-card" data-player="4">
+        <img src="pic/belinham.png" alt="Player 4">
+        <h3>Bellingham</h3>
+        <p>Yarim himoyachi</p>
+      </div>
+  
+      <!-- Slick Slider for remaining players -->
+      <div class="player-slider">
+        <div class="player-card" data-player="5">
+          <img src="pic/rodrigo.png" alt="Player 5">
+          <h3>Rodrigo</h3>
+          <p>Hujumchi</p>
+        </div>
+        <div class="player-card" data-player="6">
+            <img src="pic/carvahal.png" alt="Player 6">
+            <h3>Carvahal</h3>
+            <p>Himoyachi</p>
+          </div>
+          <div class="player-card" data-player="7">
+            <img src="pic/valverde.png" alt="Player 7">
+            <h3>Valverde</h3>
+            <p>Yarim Himoyachi</p>
+          </div>
+          <div class="player-card" data-player="8">
+            <img src="pic/rudiger.png" alt="Player 8">
+            <h3>Rudiger</h3>
+            <p>Himoyachi</p>
+          </div>
+          <div class="player-card" data-player="9">
+            <img src="pic/alaba.png" alt="Player 9">
+            <h3>Alaba</h3>
+            <p>Himoyachi</p>
+          </div>
+          <div class="player-card" data-player="10">
+            <img src="pic/modrich.png" alt="Player 10">
+            <h3>Modrich</h3>
+            <p>Yarim Himoyachi</p>
+          </div>
+          <div class="player-card" data-player="11">
+            <img src="pic/camavinga.png" alt="Player 11">
+            <h3>Camavinga</h3>
+            <p>Yarim Himoyachi</p>
+          </div>
+        <!-- Add other player cards similarly -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="player-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <div class="modal-header">
+        <img id="modal-player-img" src="" alt="Player Image">
+        <h3 id="modal-player-name">O'yinchi Ismi</h3>
+        <p id="modal-player-position">Lavozimi</p>
+      </div>
+      <div class="modal-body">
+        <p><strong>Yosh:</strong> <span id="modal-player-age">25</span></p>
+        <p><strong>Club:</strong> <span id="modal-player-club">Club Ismi</span></p>
+        <p><strong>Narxi:</strong> <span id="modal-player-price">$50,000,000</span></p>
+        <p><strong>Yutuqlari:</strong> <span id="modal-player-achievements">5 ta chempionlik</span></p>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <section class="achievements"  id="yutuq">
+    <h2 class="section-title">Klub Yutuqlari</h2>
+    <div class="cards-container">
+      <div class="card">
+        <img src="cup/pic/image.png" alt="Achievement 1">
+        <h3>Ispaniya Kubog</h3>
+      </div>
+      <div class="card">
+        <img src="cup/pic/image copy.png" alt="Achievement 2">
+        <h3>Laliga Kubog</h3>
+      </div>
+      <div class="card">
+        <img src="cup/pic/image copy 2.png" alt="Achievement 3">
+        <h3>Chempionlar Ligasi</h3>
+      </div>
+      <div class="card">
+        <img src="cup/pic/image copy 3.png" alt="Achievement 4">
+        <h3>Super Cup </h3>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section">
+    <div class="contact-header">
+        <h2>Real Madrid bilan bog'lanish</h2>
+        <p>Biz bilan bog'laning yoki Real Madrid haqida ko'proq bilib oling.</p>
+    </div>
+
+    <div class="contact-container">
+        <!-- Kontakt ma'lumotlari -->
+        <div class="contact-info">
+            <h3>Real Madrid haqida</h3>
+            <p>Real Madrid CF dunyoning eng muvaffaqiyatli futbol klublaridan biri hisoblanadi. 1902-yilda tashkil etilgan klub ko'plab La Liga chempionliklarini, UEFA Chempionlar Ligasi g‘olibliklarini va boshqa nufuzli turnirlarni yutgan. Klub boy tarixi, afsonaviy o‘yinchilari va futbolga sadoqat bilan tanilgan.</p>
+            <h3>Bizni kuzatib boring</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/realmadrid" target="_blank" class="fab fa-facebook"></a>
+                <a href="https://www.twitter.com/realmadrid" target="_blank" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/realmadrid" target="_blank" class="fab fa-instagram"></a>
+                <a href="https://www.youtube.com/realmadrid" target="_blank" class="fab fa-youtube"></a>
+            </div>
+        </div>
+
+        <!-- Xarita -->
+        <div class="contact-map">
+            <h3>Real Madrid Stadioni</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.9063239360133!2d-3.6883449846068935!3d40.453054779360704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297c9a08f1b3%3A0x1f7d8eb52e4eb03e!2sSantiago%20Bernab%C3%A9u%20Stadium!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Football Club. Barcha huquqlar himoyalangan.</p>
+  </footer>
+  <!-- jQuery va Slick Slider JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
